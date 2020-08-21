@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- scripts -->
+    <script src="script.js" defer></script>
+
+    <!-- title -->
+    <title>Assignment</title>
+</head>
+
+
+<body>
+    
+    <div id="pageContainer">
+
+        <!-- input fields section -->
+        <div id="inputFieldsSection">
+            <div id="inputFields">
+                <label for="lengthInput">Length</label>
+                <input type="text" id="lengthInput" placeholder="Enter a length...">
+                <p id="errorMsgForLength" class="inputErrorMsg"></p>
+                
+                <label for="heightInput">Height</label>
+                <input type="text" id="heightInput" placeholder="Enter a height...">
+                <p id="errorMsgForHeight" class="inputErrorMsg"></p>
+
+                <label for="startingPosXInput">X</label>
+                <input type="text" id="startingPosXInput" placeholder="Enter a starting X...">
+                <p id="errorMsgForX" class="inputErrorMsg"></p>
+
+                <label for="startingPosYInput">Y</label>
+                <input type="text" id="startingPosYInput" placeholder="Enter a starting Y...">
+                <p id="errorMsgForY" class="inputErrorMsg"></p>
+            </div>
+
+            <!-- bottom section of the inputs section -->
+            <div id="textAndButtonsSection">
+                <div id="squareAreaTextSection">
+                    <p id="squareAreaText">Square area: <span id="areaOfRectText"></span></p>
+                </div>
+
+                <div id="buttonsSection">
+                    <button id="calculateBtn" class="customBtn">Calculate</button>
+                    <button id="drawBtn" class="customBtn">Draw</button>
+                </div>
+
+                <p id="errorMsgForCanvas"></p>
+            </div>
+        </div>
+
+
+        <!-- the canvas section -->
+        <div id="canvasSection">
+            <canvas width="800" height="800" id="myCanvas"></canvas>
+            <button id="clearCanvasBtn" class="customBtn">Clear</button>
+        </div>
+    </div>
+
+</body>
+</html>
